@@ -1,0 +1,21 @@
+body {
+	background-color: #141f34;
+}
+
+h1, h2, p, #logo .logotype, #logo .est-date, #main-nav > .nav-item > a {
+	color: white;
+}
+
+h3 {
+	color: #7695ce;
+}
+
+#header-nav .more-btn::after {
+  color: white;
+}
+
+#header-nav .more-btn svg {
+  stroke: white;
+}
+
+/* #da680f */

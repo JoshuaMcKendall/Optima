@@ -390,6 +390,10 @@ input {
 * MAIN CSS
 *********************************************/
 
+html,body {
+ overflow-x: hidden; 
+}
+
 .optima-body {
   margin: 30px 0px 0px;
 }

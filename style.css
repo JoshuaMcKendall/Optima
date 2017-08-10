@@ -102,6 +102,7 @@ a:hover {
 
 input {
     -webkit-appearance: none;
+    border-radius: 0;
 }
 
 .clearfix::after { 

@@ -454,7 +454,8 @@ input {
   font-family: 'Montserrat';
   width: 100%;
   float: left;
-  display: table-cell; }
+  display: table-cell;
+  font-size: 13px; }
 
 #search .input-group {
   position: relative;
@@ -467,7 +468,8 @@ input {
   background-color: #324377;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
-  border: 1px solid #324377; }
+  border: 1px solid #324377;
+  margin: 0;}
 
 #header-nav {
     float: left;

@@ -695,7 +695,7 @@ footer .social-link {
   margin-right: 30px;
 }
 
-footer .social-links:last-child {
+footer .social-link:first-child {
  margin-right: 0px; 
 }
 

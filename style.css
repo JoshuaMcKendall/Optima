@@ -695,6 +695,10 @@ footer .social-link {
   margin-right: 30px;
 }
 
+footer .social-link:last-child {
+ margin-right: 0px; 
+}
+
 footer .social-link svg {
   stroke: white;
 }

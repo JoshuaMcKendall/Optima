@@ -34,10 +34,12 @@
       if(currentHour >= minHour && currentHour <= maxHour) {
 
         changeLogo(time);
+        changeTheme();
 
       } else if( (currentHour >= 19 && currentHour <= 24) || (currentHour >= 1 && currentHour <= 5) ) {
 
         changeLogo('night');
+        changeTheme('night');
 
       }
 

@@ -9,11 +9,13 @@
       day       = logo.getElementsByClassName('day')[0],
       afternoon = logo.getElementsByClassName('afternoon')[0],
       night     = logo.getElementsByClassName('night')[0],
+      manuallyChanged = false,
       selector  = document.getElementById('theme-switcher');
 
 
   selector.addEventListener('change', function(e) {
       changeTheme(selector.value);
+      manuallyChanged = true;
   });
 
   function setTime() {
@@ -34,12 +36,16 @@
       if(currentHour >= minHour && currentHour <= maxHour) {
 
         changeLogo(time);
-        changeTheme();
+        if(!manuallyChanged) {
+          changeTheme();
+        }
 
       } else if( (currentHour >= 19 && currentHour <= 24) || (currentHour >= 1 && currentHour <= 5) ) {
 
         changeLogo('night');
-        changeTheme('night');
+        if(!manuallyChanged) {
+          changeTheme('night');
+        }
 
       }
 

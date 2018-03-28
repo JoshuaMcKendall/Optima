@@ -121,7 +121,11 @@ input {
   font: inherit;
 }
 
-
+input {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    border-radius: 0;
+}
 
 .clearfix::after { 
    content: " ";

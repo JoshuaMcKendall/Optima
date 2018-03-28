@@ -332,7 +332,11 @@ input {
   height: 40px;
 }
 
-.input-group-btn:last-child>.btn {
+.input-group-btn:last-child {
+  left: -1px;
+}
+
+.input-group-btn > .btn:last-child {
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
 }
@@ -364,8 +368,15 @@ html,body {
   display: table;
 }
 
+.logo-container {
+
+    text-decoration: none;
+    margin: 0 0 1em 0;
+
+}
+
 #logo {
-  float: left; }
+  text-align: center; }
 
 #logo .symbol {
   display: inline-block;
@@ -406,6 +417,8 @@ html,body {
   padding: 10px;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
   font-family: 'Montserrat';
   width: 100%;
   float: left;
@@ -656,32 +669,24 @@ footer .social-link svg {
   stroke: white;
 }
 
-@media (max-width: 991px) {
-  #header-nav > .more-btn.hidden {
-    visibility: visible;
-    display: block;
-  }
-}
+/*--------------------------------------------------------------
+10.0 Media Queries
+--------------------------------------------------------------*/
 
-@media (max-width: 768px) {
+@media (min-width: 750px) {
+
 
   #logo {
-    text-align: center;
+    text-align: left;
     margin-bottom: 15px;
+    float: none;
   }
 
   footer p {
     font-size: 16px;
   }
 
-}
-<<<<<<< HEAD
 
-/*--------------------------------------------------------------
-10.0 Media Queries
---------------------------------------------------------------*/
-
-@media (min-width: 750px) {
 .container {
 width: 720px; }
 

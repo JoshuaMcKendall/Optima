@@ -440,6 +440,7 @@ html,body {
 
 #search .form,
 input[type="search"] {
+  -webkit-appearance: none;
   border: 1px solid #9b9b9b;
   padding: 10px;
   border-top-left-radius: 3px;
